@@ -1,0 +1,40 @@
+<h1>{{name}}</h1>
+
+<div class="wrapper">
+<div class="col col-lg-2" >
+    <div class="list-group">
+        <a href="#" class="list-group-item" data-ng-repeat="company in  mobileArray">{{company}}</a>
+    </div>
+</div>
+<div class="col col-lg-10">
+    <h2>images</h2>
+    <div class = "row">
+
+        <div class = "col-sm-6 col-md-3" data-ng-repeat="item in mobileGalleryArray" style="float: left">
+            <a data-ng-href = "{{item.route}}" class = "thumbnail" >
+                <h5 class="text-center">{{item.company}}</h5>
+                <img data-ng-src= "{{item.url}}" class="nokiaImgSize" alt = "Generic placeholder thumbnail">
+            </a>
+        </div>
+
+        <!--<div class = "col-sm-6 col-md-3">-->
+            <!--<a href = "#" class = "thumbnail">-->
+                <!--<img src = "img/me.jpg" alt = "Generic placeholder thumbnail">-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class = "col-sm-6 col-md-3">-->
+            <!--<a href = "#" class = "thumbnail">-->
+                <!--<img src = "img/me.jpg" alt = "Generic placeholder thumbnail">-->
+            <!--</a>-->
+        <!--</div>-->
+
+        <!--<div class = "col-sm-6 col-md-3">-->
+            <!--<a href = "#" class = "thumbnail">-->
+                <!--<img src = "img/me.jpg" alt = "Generic placeholder thumbnail">-->
+            <!--</a>-->
+        <!--</div>-->
+
+    </div>
+</div>
+</div>
